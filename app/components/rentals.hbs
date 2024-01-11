@@ -1,7 +1,7 @@
 <div class="rentals">
   <label>
     <span>Where would you like to stay?</span>
-    <Input @value={{this.query}} @input={{this.updateQuery}} class="light" />
+    <Input @value={{this.query}} class="light" {{on "input" this.updateQuery}} />
   </label>
 
   <ul class="results">
